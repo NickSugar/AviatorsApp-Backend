@@ -6,7 +6,7 @@ exports.seed = function(knex, Promise) {
         {
           number: 1,
           name: 'General aircraft info',
-          description: 'This Airplane Flight Manual is intended to provide pilots and instructors with
+          description: '
               information for safe and effective operation of this airplane which belongs in the
               Light Sport Airplane category. Some supplementary information is also
 
