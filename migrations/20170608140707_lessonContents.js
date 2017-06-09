@@ -5,7 +5,7 @@ exports.up = function(knex, Promise) {
     table.integer('lesson_id')
       .references('lessons.id')
       .onDelete('CASCADE');
-    table.integer('order')
+    table.float('order')
     table.string('type')
     table.text('content')
   })
