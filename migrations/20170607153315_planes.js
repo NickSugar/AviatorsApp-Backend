@@ -2,11 +2,10 @@
 exports.up = function(knex, Promise) {
   return knex.schema.createTable('planes', table=>{
     table.increments()
-    table.string('name')
+    table.string('name').primary()
     table.string('fullName')
     table.text('description')
     table.string('img_url')
-    table.primary(['id', 'name'])
   })
 };
 
