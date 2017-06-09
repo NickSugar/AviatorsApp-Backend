@@ -41,7 +41,7 @@ exports.seed = function(knex, Promise) {
           lesson_id: knex('lessons').where('lessonOn', 'gobosh').select('id'),
           order: 1.1,
           type: 'dataList',
-          content: '(Important Gobosh Characteristics)
+          content: `(Important Gobosh Characteristics)
             Dimensions>
               - Span : 27.4 ft;
               - Lenght : 20.5 ft;
@@ -53,12 +53,12 @@ exports.seed = function(knex, Promise) {
 
                 engine. The cylinders are air-cooled, the cylinder heads, by liquid cooled. Dual
 
-                ignition. 98.5 HP take-off power, 92.5 HP continuous power.'
+                ignition. 98.5 HP take-off power, 92.5 HP continuous power.`
         },{
           lesson_id: knex('lessons').where('lessonOn', 'gobosh').select('id'),
           order: 1.2,
           type: 'dataList',
-          content: '(Important or helpful Abbreviations and definitions)
+          content: `(Important or helpful Abbreviations and definitions)
             Air Speeds>
               - TAS : “TRUE AIRSPEED” means the airspeed of an air vessel, relative to the
 
@@ -101,7 +101,7 @@ exports.seed = function(knex, Promise) {
 
               - VY : Airspeed for the maximum rate of climb. This is the airspeed at which the
 
-              maximum increase of altitude in the shortest time may be achieved.;'
+              maximum increase of altitude in the shortest time may be achieved.;`
         },
       ]);
     });
