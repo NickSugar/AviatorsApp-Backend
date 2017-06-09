@@ -21,7 +21,7 @@ exports.seed = function(knex, Promise) {
       // Section Headers
       //=========================
         {
-          lesson_id: knex('lessons').where('lessonOn', 'gobosh').select('id'),
+          lesson_id: knex('lessons').where('lessonOn', 'gobosh').select('id').first(),
           order: 1.0,
           type: 'sectionHeader',
           content: 'Gobosh Descriptive Data and Definitions and Abbreviations'
@@ -55,7 +55,7 @@ exports.seed = function(knex, Promise) {
 
                 ignition. 98.5 HP take-off power, 92.5 HP continuous power.`
         },{
-          lesson_id: knex('lessons').where('lessonOn', 'gobosh').select('id'),
+          lesson_id: knex('lessons').where('lessonOn', 'gobosh').select('id').first(),
           order: 1.2,
           type: 'dataList',
           content: `(Important or helpful Abbreviations and definitions)
