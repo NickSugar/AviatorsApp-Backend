@@ -6,6 +6,7 @@ exports.up = function(knex, Promise) {
     table.string('fullName')
     table.text('description')
     table.string('img_url')
+    table.primary(['id', 'name'])
   })
 };
 

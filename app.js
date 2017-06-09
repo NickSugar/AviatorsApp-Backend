@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 var cors = require('cors');
 
 var planes = require('./routes/planes');
+var lessons = require('./routes/lessons');
 
 var app = express();
 
@@ -21,6 +22,7 @@ app.use(cookieParser());
 app.use('/apidocs', express.static(path.join(__dirname, 'apidoc')));
 
 app.use('/planes', planes);
+app.use('/lessons', lessons);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

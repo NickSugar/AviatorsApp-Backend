@@ -1,8 +1,9 @@
 var database = require('./connection')
 
 module.exports = {
-  getPlanes
-  // getBook,
+  getPlanes,
+  getLessons,
+  getLessonContent
   // editBook,
   // deleteBook,
   // getAuthorsBookID,
@@ -16,9 +17,13 @@ function getPlanes() {
   return database('planes').select('*')
 }
 
-// function getBook(book_id) {
-//   return database('book').select('*').where('id', book_id)
-// }
+function getLessons(lessonOn) {
+  return database('lessons').select('*').where('lessonOn', lessonOn)
+}
+
+function getLessonContent(lesson_id) {
+  return database('lessonsContents').select('*').where('lesson_id', lesson_id)
+}
 //
 // function editBook(book, book_id) {
 //   return database('book').where('id', book_id)

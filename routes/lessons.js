@@ -2,18 +2,33 @@ var express = require('express');
 var router = express.Router();
 var queries = require('../data/queries')
 
-
-router.get('/', (req, res, next)=>{
-  queries.getPlanes()
-    .then(planes=>{
-      res.json(planes)
-    })
-})
-
-router.get('/:name/lessons', (req, res, next)=>{
-  queries.getLessons(req.params.name)
-    .then(lessons=>{
-      res.json(lessons)
+/**
+ * @api {get} /lessons/:id/lessonContents Request Lessons Contents
+ * @apiName GetLessonContents
+ * @apiGroup Lessons
+ *
+ * @apiParam {Number} id Lessons unique ID.
+ *
+ * @apiSuccess {Number} id Contents unique ID.
+ * @apiSuccess {Number} lesson_id  Foreign key of lesson
+ * @apiSuccess {Number} order Decimal number of the order in the lesson.
+ * @apiSuccess {String} type Content type (i.e. header, list...)
+ * @apiSuccess {String} content A string of content
+ *
+ * @apiSuccessExample Success-Response:
+ *     HTTP/1.1 200 OK
+ *     {
+ *       id: 3,
+ *       lesson_id: 2,
+ *       order: 1.3,
+ *       type: "dataList",
+ *       content: "(Important Gobosh Characteristics) Dimensions> - Span : 27.4 ft; - Lenght : 20.5 ft;"
+ *     }
+ */
+router.get('/:id/lessonContents', (req, res, next)=>{
+  queries.getLessonContent(req.params.id)
+    .then(contents=>{
+      res.json(contents)
     })
 })
 
