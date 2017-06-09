@@ -38,7 +38,7 @@ exports.seed = function(knex, Promise) {
       //=========================
 
         {
-          lesson_id: knex('lessons').where('lessonOn', 'gobosh').select('id'),
+          lesson_id: knex('lessons').where('lessonOn', 'gobosh').select('id').first(),
           order: 1.1,
           type: 'dataList',
           content: `(Important Gobosh Characteristics)
