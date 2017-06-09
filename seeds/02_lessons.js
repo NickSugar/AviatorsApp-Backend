@@ -15,7 +15,8 @@ exports.seed = function(knex, Promise) {
               responsibility to acquaint him/herself with the contents of this manual, as well as
 
               with any revisions to it.`,
-          lessonOn: 'gobosh'
+          lessonOn: 'gobosh',
+          type: 'Aircraft Lessons'
         },
         {
           number: 2,
@@ -25,7 +26,8 @@ exports.seed = function(knex, Promise) {
               of the instruments and the basic informative placards required for safe operation
 
               of the airplane, engine, the standard systems and the standard equipment.`,
-          lessonOn: 'gobosh'
+          lessonOn: 'gobosh',
+          type: 'Aircraft Lessons'
         },
         {
           number: 3,
@@ -35,7 +37,8 @@ exports.seed = function(knex, Promise) {
               to be utilized in emergency situations, and which may occur during airplane
 
               operation.`,
-          lessonOn: 'gobosh'
+          lessonOn: 'gobosh',
+          type: 'Aircraft Lessons'
         }
       ]);
     });

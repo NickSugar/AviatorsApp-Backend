@@ -10,13 +10,6 @@ router.get('/', (req, res, next)=>{
     })
 })
 
-router.get('/:name/lessons', (req, res, next)=>{
-  queries.getLessons(req.params.name)
-    .then(lessons=>{
-      res.json(lessons)
-    })
-})
-
 // router.get('/:id', function(req, res, next) {
 //   queries.getAuthor(req.params.id)
 //     .then(authorNoBooks=>{

@@ -2,6 +2,13 @@ var express = require('express');
 var router = express.Router();
 var queries = require('../data/queries')
 
+router.get('/:lessonOn', (req, res, next)=>{
+  queries.getLessons(req.params.lessonOn)
+    .then(lessons=>{
+      res.json(lessons)
+    })
+})
+
 /**
  * @api {get} /lessons/:id/lessonContents Request Lessons Contents
  * @apiName GetLessonContents
