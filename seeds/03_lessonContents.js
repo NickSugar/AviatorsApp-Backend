@@ -25,7 +25,7 @@ exports.seed = function(knex, Promise) {
           order: 1.0,
           type: 'sectionHeader',
           content: 'Gobosh Descriptive Data and Definitions and Abbreviations'
-        }
+        },
       //=========================
       // Data list
       //
@@ -102,7 +102,7 @@ exports.seed = function(knex, Promise) {
               - VY : Airspeed for the maximum rate of climb. This is the airspeed at which the
 
               maximum increase of altitude in the shortest time may be achieved.;`
-        },
+        }
       ]);
     });
 };
