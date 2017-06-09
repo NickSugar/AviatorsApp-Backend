@@ -22,7 +22,7 @@ function getLessons(lessonOn) {
 }
 
 function getLessonContent(lesson_id) {
-  return database('lessonsContents').select('*').where('lesson_id', lesson_id)
+  return database('lessonContents').select('*').where('lesson_id', lesson_id)
 }
 //
 // function editBook(book, book_id) {
