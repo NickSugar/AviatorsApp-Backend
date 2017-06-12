@@ -41,14 +41,14 @@ exports.seed = function(knex, Promise) {
           lesson_id: knex('lessons').where('lessonOn', 'gobosh').select('id').first(),
           order: 1.1,
           type: 'dataList',
-          content: `(Important Gobosh Characteristics)
-            > Dimensions
+          content: `(Important Gobosh Characteristics);
+            > Dimensions;
               - Span : 27.4 ft;
               - Lenght : 20.5 ft;
               - Height : 7.34 ft;
-            > Landing gear
+            > Landing gear;
               - Wheel track : 7.42 ft;
-            > Engine
+            > Engine;
               < Four cylinder, horizontally opposed BOMBARDIER ROTAX, model 912ULS
 
                 engine. The cylinders are air-cooled, the cylinder heads, by liquid cooled. Dual
@@ -58,8 +58,8 @@ exports.seed = function(knex, Promise) {
           lesson_id: knex('lessons').where('lessonOn', 'gobosh').select('id').first(),
           order: 1.2,
           type: 'dataList',
-          content: `(Important or helpful Abbreviations and definitions)
-            > Air Speeds
+          content: `(Important or helpful Abbreviations and definitions);
+            > Air Speeds;
               - TAS : “TRUE AIRSPEED” means the airspeed of an air vessel, relative to the
 
                       undisturbed airflow. It is CAS corrected by the change of air density
