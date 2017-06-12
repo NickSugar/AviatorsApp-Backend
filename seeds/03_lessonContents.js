@@ -29,7 +29,7 @@ exports.seed = function(knex, Promise) {
       //=========================
       // Data list
       //
-      // () = Sub header
+      // ( = Sub header
       // > = data type
       // - = list item
       // : = data value
@@ -41,7 +41,7 @@ exports.seed = function(knex, Promise) {
           lesson_id: knex('lessons').where('lessonOn', 'gobosh').select('id').first(),
           order: 1.1,
           type: 'dataList',
-          content: `(Important Gobosh Characteristics);
+          content: `(Important Gobosh Characteristics;
             > Dimensions;
               - Span : 27.4 ft;
               - Lenght : 20.5 ft;
@@ -58,7 +58,7 @@ exports.seed = function(knex, Promise) {
           lesson_id: knex('lessons').where('lessonOn', 'gobosh').select('id').first(),
           order: 1.2,
           type: 'dataList',
-          content: `(Important or helpful Abbreviations and definitions);
+          content: `(Important or helpful Abbreviations and definitions;
             > Air Speeds;
               - TAS : “TRUE AIRSPEED” means the airspeed of an air vessel, relative to the
 
